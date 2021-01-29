@@ -197,7 +197,7 @@ namespace Quantum.Kata.JointMeasurements {
     // for the purposes of the last two tasks: prohibiting all multi-qubit operations,
     // except the two that are allowed to be used for solving this task
     operation GetMultiQubitNonMeasurementOpCount () : Int {
-        return GetMultiQubitOpCount() - GetOracleCallsCount(Measure) - GetOracleCallsCount(MeasureAllZ);
+        return GetMultiQubitOpCount() - GetOracleCallsCount(Measure);
     }
     
     
